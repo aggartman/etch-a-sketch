@@ -1,0 +1,120 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: palegoldenrod;
+  font-family: 'Lobster', cursive;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  color: goldenrod;
+  text-shadow: 2px 2px 1.5px #644e15;
+}
+
+.page {
+  width: 960px;
+  height: 720px;
+  border-radius: 8%;
+  margin: auto;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+:root {
+  --grid-cols: 16;
+  --grid-rows: 16;
+}
+
+.container {
+  width: 960px;
+  height: 720px;
+  background-color: whitesmoke;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[var];
+      grid-template-rows: repeat(var(--grid-rows), 1fr);
+  -ms-grid-columns: (1fr)[var];
+      grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+  padding: 0;
+  margin: 0;
+  max-width: calc(960px / var(--grid-cols));
+  max-height: calc(720px / var(--grid-rows));
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgba(201, 201, 201, 0.486);
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+#gridChange {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 60px;
+  background-color: #a0a0a0;
+  border: 40px solid #a0a0a0;
+  border-radius: 100px;
+}
+
+.choose, .limit {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Staatliches', cursive;
+  color: goldenrod;
+  text-shadow: 1px 1px 1px #644e15;
+}
+
+.choose {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.limit {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.buttons {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+#submitButton, #clear {
+  margin: 0 auto;
+}
+
+#submitButton {
+  background-color: goldenrod;
+  border-radius: 10px;
+  font-size: 1.20rem;
+  color: white;
+}
+
+#clear {
+  background-color: goldenrod;
+  border-radius: 10px;
+  font-size: 1.20rem;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
